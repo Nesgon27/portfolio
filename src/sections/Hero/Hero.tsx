@@ -4,9 +4,8 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-6xl gap-12 md:grid-cols-2 md:items-center">
         <div>
           <span className="inline-block rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm text-blue-400">
-            Disponible para trabajo remoto
+            Programador
           </span>
-          <p className="mt-6 text-xl text-slate-300">Hola, soy</p>
           <h1 className="mt-2 text-5xl font-bold tracking-tight sm:text-6xl">
             Néstor <span className="text-blue-400">Méndez</span>
           </h1>

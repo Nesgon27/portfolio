@@ -15,6 +15,7 @@ const navItems: NavItem[] = [
 ];
 
 const CV_URL = "/cv-nestor-mendez.pdf";
+const CV_FILENAME = "CV-Nestor-Mendez.pdf";
 
 const linkClass =
   "rounded-md text-sm text-white transition-colors hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400";
@@ -54,7 +55,7 @@ export default function Navbar() {
           ))}
           <a
             href={CV_URL}
-            download
+            download={CV_FILENAME}
             className="rounded-lg border border-slate-600 px-4 py-2 text-sm font-semibold transition hover:border-blue-400 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
           >
             Descargar CV
@@ -107,7 +108,7 @@ export default function Navbar() {
             <li>
               <a
                 href={CV_URL}
-                download
+                download={CV_FILENAME}
                 onClick={() => setIsOpen(false)}
                 className="inline-block rounded-lg border border-slate-600 px-4 py-2 text-sm font-semibold transition hover:border-blue-400 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
               >
