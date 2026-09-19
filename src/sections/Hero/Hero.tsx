@@ -1,3 +1,5 @@
+import logoNM from "../../assets/logoNM.png";
+
 export default function Hero() {
   return (
     <section id="inicio" className="flex min-h-screen items-center px-6 pt-24">
@@ -33,9 +35,9 @@ export default function Hero() {
         </div>
         <div
           aria-hidden="true"
-          className="mx-auto flex h-64 w-64 items-center justify-center rounded-full border border-blue-400/20 bg-blue-400/10 text-6xl font-bold text-blue-400 sm:h-80 sm:w-80 sm:text-7xl"
+          className="mx-auto flex h-64 w-64 items-center justify-center rounded-full border border-white bg-white/30 text-6xl font-bold text-blue-400 sm:h-80 sm:w-80 sm:text-7xl"
         >
-          NM
+          <img src={logoNM} alt="Néstor Méndez" className="w-full h-full object-contain" />
         </div>
       </div>
     </section>

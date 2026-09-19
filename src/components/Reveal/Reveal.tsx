@@ -22,7 +22,7 @@ export default function Reveal({ children, delay = 0 }: RevealProps) {
         setIsVisible(true);
         observer.disconnect();
       },
-      { rootMargin: "0px 0px -25% 0px" }
+      { rootMargin: "0px 0px -35% 0px" }
     );
 
     observer.observe(node);
