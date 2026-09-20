@@ -6,12 +6,12 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Inicio", href: "inicio" },
-  { label: "Sobre mí", href: "sobre-mi" },
-  { label: "Habilidades", href: "habilidades" },
-  { label: "Proyectos", href: "proyectos" },
-  { label: "Experiencia", href: "experiencia" },
-  { label: "Contacto", href: "contacto" },
+  { label: "Inicio", href: "#inicio" },
+  { label: "Sobre mí", href: "#sobre-mi" },
+  { label: "Habilidades", href: "#habilidades" },
+  { label: "Proyectos", href: "#proyectos" },
+  { label: "Experiencia", href: "#experiencia" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 const CV_URL = "/cv-nestor-mendez.pdf";
@@ -108,7 +108,7 @@ export default function Navbar() {
             <li>
               <a
                 href={CV_URL}
-                download={CV_FILENAME}
+                download
                 onClick={() => setIsOpen(false)}
                 className="inline-block rounded-lg border border-slate-600 px-4 py-2 text-sm font-semibold transition hover:border-blue-400 hover:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
               >
