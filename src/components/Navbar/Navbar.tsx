@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 type NavItem = {
   label: string;
@@ -49,9 +50,9 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className={linkClass}>
+            <Link key={item.href} to={item.href} className={linkClass}>
               {item.label}
-            </a>
+            </Link>
           ))}
           <a
             href={CV_URL}
