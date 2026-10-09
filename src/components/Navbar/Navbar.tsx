@@ -6,7 +6,7 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Inicio", href: "#inicio" },
+  { label: "Inicio", href: "inicio" },
   { label: "Sobre mí", href: "#sobre-mi" },
   { label: "Habilidades", href: "#habilidades" },
   { label: "Proyectos", href: "#proyectos" },
